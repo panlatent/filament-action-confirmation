@@ -1,29 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "panlatent/filament-action-confirmation",
+    "description": "Prompt the user to enter the specified text before performing sensitive operations.",
     "keywords": [
-        ":vendor_name",
+        "panlatent",
         "laravel",
-        ":package_slug"
+        "filament-action-confirmation"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/panlatent/filament-action-confirmation",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/panlatent/filament-action-confirmation/issues",
+        "source": "https://github.com/panlatent/filament-action-confirmation"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "panlatent",
+            "email": "panlatent@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -41,13 +39,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Panlatent\\Filament\\ActionConfirmation\\": "src/",
+            "Panlatent\\Filament\\ActionConfirmation\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Panlatent\\Filament\\ActionConfirmation\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +65,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Panlatent\\Filament\\ActionConfirmation\\FilamentActionConfirmationServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentActionConfirmation": "Panlatent\\Filament\\ActionConfirmation\\Facades\\FilamentActionConfirmation"
             }
         }
     },
